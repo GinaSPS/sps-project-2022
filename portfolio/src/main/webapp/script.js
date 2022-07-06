@@ -26,3 +26,16 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+/**
+ * Async function loads the class data from the DataStore
+ */
+ async function loadSearchClassData(){
+  const serverResponse = await fetch('/search-class');
+  const serverResponseJson = await serverResponse.json();
+  const formDataContainer = document.getElementById('class-data-display-container');
+
+  // use JSON library to print the string of the response
+  formDataContainer.innerText = JSON.stringify(serverResponseJson);
+  console.log(serverResponseJson);
+}
