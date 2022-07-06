@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="addclass.css" />
+
+    <!-- Import Bootstrap CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- Import Google Fonts: Playfair Display  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Gowun+Dodum&family=Playfair+Display:wght@400;500&family=Prata&family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+			<section class="nav-intro" style="background-image: url('flower.jpg');">
+					<div class="container">
+						<nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
+							<div class="container-xxl">
+								<!-- navbar brand / title -->
+								<a class="navbar-brand" href="index.html">
+									<span class="fw-bold brand">
+										ClassmateFinder
+									</span>
+								</a>
+								<!-- toggle button for mobile nav -->
+								<button
+									class="navbar-toggler"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#main-nav"
+									aria-controls="main-nav"
+									aria-expanded="false"
+									aria-label="Toggle navigation"
+								>
+									<span class="navbar-toggler-icon"></span>
+								</button>
+
+										
+								<!-- navbar links -->
+
+							
+								<div
+									class="collapse navbar-collapse justify-content-end align-center"
+									id="main-nav"
+								>
+								
+									<ul class="navbar-nav">
+										
+
+										<li class="nav-item">
+											<a class="nav-link drop" href="#">HOME</a>
+										</li>
+		
+										<li class="nav-item">
+											<a class="nav-link drop" href="#">CLASSES</a>
+										</li>
+		
+										<li class="nav-item">
+											<a class="nav-link drop" href="#">ABOUT</a>
+										</li>
+
+										<li class="nav-item">
+												<a class="nav-link drop" href="#">SIGN IN</a>
+											</li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</div>
+		<!--Navigation Bar-->
+
+		<section class="form-header">
+            <div class="row">
+                <h1 class="col-10 offset-2 form-para">Search for class</h1>
+            </div>
+            
+            </div>
+        </section>
+
+    <form method="GET" action="/searchClass">
+
+        <div class="form-group col-md-6 offset-2">
+            <label for="college-name" class = "input-header">College/University Name</label>
+            <input type="text" class="form-control" id="college-name" placeholder="University of California">
+        
+            <label for="department" class = "input-header">Department</label>
+            <input type="text" class="form-control" id="department" placeholder="Computer Science">
+
+            <label for="professor" class = "input-header">Professor</label>
+            <input type="text" class="form-control" id="professor" placeholder="Joe Michael">
+       
+            <label for="classSemester" class = "input-header">Class Semester</label>
+            <select id="classSemester" name="classSemester" class="form-control">
+                <option value="default">--select--</option>
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+                <option value="fall">Fall</option>
+                <option value="winter">Winter</option>
+            </select>
+            
+            <label for="classYear" class = "input-header">Class Year</label>
+            <select id="classYear" name="classYear" class="form-control">
+                <option value="default">--select--</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+            </select>
+
+            <label for="classNumber" class = "input-header">Class Name/Number</label>
+            <input type="text" class="form-control" id="classNumber" placeholder="CSE-101">
+        
+        </div>
+		
+        <div class="row">
+            <div class = "col-md-6 offset-2">
+            <button type="submit" class="btn btn-dark">Search</button>
+        </div>
+    
+    </form>
+
+
+
+		
+   
+    <footer class = "contact"> 
+        
+		</footer>
+		
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
