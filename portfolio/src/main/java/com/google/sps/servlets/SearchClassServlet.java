@@ -1,4 +1,4 @@
-package com.google.sps.servlets.ClassHandlerServlets;
+package com.google.sps.servlets;
 
 import com.google.cloud.datastore.Datastore;
 import com.google.cloud.datastore.DatastoreOptions;
@@ -44,8 +44,8 @@ public class SearchClassServlet extends HttpServlet {
         Long classYear = entity.getLong("classYear");
         Long timestamp = entity.getLong("timestamp");
   
-        ClassData class = new ClassData(schoolName, department, professor, semester, classYear, className,timestamp);
-        classes.add(class);
+        ClassData c = new ClassData(schoolName, department, professor, semester, classYear, className,timestamp);
+        classes.add(c);
       }
   
       String formsJson = convertToJsonByGson(classes);
