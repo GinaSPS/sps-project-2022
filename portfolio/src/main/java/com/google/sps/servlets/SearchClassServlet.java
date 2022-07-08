@@ -39,12 +39,12 @@ public class SearchClassServlet extends HttpServlet {
         String schoolName = entity.getString("schoolName");
         String department = entity.getString("department");
         String professor = entity.getString("professor");
-        String semester = entity.getString("semester");
+        // String semester = entity.getString("semester");
         String className = entity.getString("className");
         Long classYear = entity.getLong("classYear");
         Long timestamp = entity.getLong("timestamp");
   
-        ClassData c = new ClassData(schoolName, department, professor, semester, classYear, className,timestamp);
+        ClassData c = new ClassData(schoolName, department, professor,classYear, className,timestamp);
         classes.add(c);
       }
   
