@@ -58,7 +58,7 @@
 /* search result content */
 .result-table table{
     width:70%; 
-    margin: 2rem 15vw;
+    margin: 2rem 16vw;
     font-family: "Inter";
     text-align: left;
 }
@@ -73,6 +73,13 @@ table td {
     font-weight: 400;
     font-size: 17px;
     padding: 10px 0;
+}
+
+table button {
+    background-color: #CBC1F3;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 17px;
 }
 
 /* search result content end */
