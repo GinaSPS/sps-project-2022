@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>Contact Us</title>
 
-<link rel="stylesheet" type="text/css" href="contactForm.css">
+<link rel="stylesheet" type="text/css" href="contactform.css">
     
 
     <!-- Import Bootstrap CSS  -->
@@ -25,7 +25,7 @@
     />
   </head>
 
-  <body style = "background-image: url(images/Background.png);">
+  <body style = "background-image: url(images/ContactBackground.png);">
 
 
 <!-- Nav Bar Begins -->
@@ -73,19 +73,19 @@
                   </li>
 
                     <li class="nav-item">
-                      <a class="nav-link drop" href="#"> HOME</a>
+                      <a class="nav-link drop" href="index.html"> HOME</a>
                     </li>
     
                     <li class="nav-item">
-                      <a class="nav-link drop" href="#">CLASSES</a>
+                      <a class="nav-link drop" href="addclass.html">CLASSES</a>
                     </li>
     
                     <li class="nav-item">
-                      <a class="nav-link drop" href="#">ABOUT</a>
+                      <a class="nav-link drop" href="contactform.html">ABOUT</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link drop" href="#">SIGN IN</a>
+                        <a class="nav-link drop" href="signin.html">SIGN IN</a>
                       </li>
                   </ul>
                 </div>
@@ -94,26 +94,42 @@
           </div>
     <!--Navigation Bar End-->
 
+    <!--Greeting-->
+    <div class ="col-md-6"  style = "float: right;">
+      <h1 id = "slogan"> Work better together. </h1>
+      <p>Our mission is to inspire students to share and explore knowledge in a collaborative community. </p>
 
+      <button class = "btn btn-dark"  style="float:right; margin-right: 50px;"> Get Connected </button>
+    </div>
+
+    <!--Mission-->
+    <div id = "mission">
+
+      <h2> - Our Mission - </h2>
+      <p>Two brains are better than one. And with a few hundred brains, things can really take off. That’s why we believe in working without borders with classmates. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+
+<hr style="margin: 0px 200px;">
+    
        <!-- Beginning of Form -->
-       <div class= "col-md-6" style="float: left;" >
+       <div class= "col-md-6" style="float: left; margin-top: 40px;" >
         
     <form >
       
-        <!--First -->
+        
         <div class="col-md-8 offset-3" id = "form" >
           <label for="inputName" class = "input-header">Name</label>
           <input type="text" class="form-control" id="inputName" placeholder="Name">
         </div>
 
-        <!--Second-->
+        
         <div class="col-md-8 offset-3" id = "form">
           <label for="inputEmail4" class = "input-header">Email</label>
           <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
         </div>   
 
       <div class="col-md-8 offset-3" id = "form">
-        <label for="inputAddress" class = "input-header">Subject</label>
+        <label for="inputAddress" class="input-header">Subject</label>
         <input type="subject" class="form-control" id="inputAddress" placeholder="Subject">
       </div>
 
@@ -132,7 +148,7 @@
   </div>
    <!-- End of Form -->
 
-  <div class = "col-md-6" style="float:right;">
+  <div class = "col-md-6" style="float:right; margin-top: 40px;">
 
         <h2 id = "messagePromptHeader"> How can we help? </h2>
         <p id = "messagePrompt"> We're open to any feedback and suggestions! Maybe you have a question? Fill in the form to message us and our team will get back to you as soon as we can! </p>

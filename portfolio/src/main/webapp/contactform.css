@@ -27,4 +27,17 @@ html, body {
   
   }
   
+  #slogan{
+    font-weight: bold; 
+    font-size: 30px;
+    margin-top: 40px;
+  }
   
+  #mission{
+    display: row;
+    margin: 150px 200px;
+    margin-top: 450px;
+    margin-bottom: 50px; 
+    padding: 0px 0px;
+    text-align: center;
+  }
