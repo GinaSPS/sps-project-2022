@@ -25,6 +25,7 @@ public class ClassHandlerServlet extends HttpServlet {
     String department = request.getParameter("department");
     String professor = request.getParameter("professor");
     String semester = request.getParameter("semester");
+    String year = request.getParameter("year");
     String classNum = request.getParameter("classnum");
     String classLink = request.getParameter("classlink");
 
@@ -38,6 +39,7 @@ public class ClassHandlerServlet extends HttpServlet {
             .set("department", department)
             .set("professor", professor)
             .set("semester", semester)
+            .set("year",year)
             .set("classNum", classNum)
             .set("classLink", classLink)
             .build();
