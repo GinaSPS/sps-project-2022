@@ -88,7 +88,7 @@
         <h1 class="form-header">Search For Class</h1>
         
         <!-- form contents -->
-        <form class="search-form-content" method="GET" action="/search-class">
+        <form class="search-form-content" method="POST" action="/search-class">
             <!-- row 1 -->
             <div class="search-rows">
                 <input type="text" 
@@ -107,7 +107,7 @@
                     class="text-input" 
                     id="professor" 
                     name="professor"
-                    placeholder="Professor" required>
+                    placeholder="Professor">
             </div>
 
             <!-- row 2 -->
@@ -117,16 +117,23 @@
                     id="className" 
                     name="className"
                     placeholder="Class Name/Number" required>
+
+                <input type="text" 
+                    class="text-input" 
+                    id="classSemester" 
+                    name="classSemester"
+                    placeholder="Class Semester" required>
             
 
                 <input type="text" 
                     class="text-input" 
                     id="classYear" 
                     name="classYear"
-                    placeholder="Class Name/Number" required>
+                    placeholder="Class Year" required>
             
-                <button type="submit" class="btn">Search</button>
-            </div>    
+                
+            </div>  
+            <button type="submit" class="btn">Search</button>  
         </form>
     </section>
 
