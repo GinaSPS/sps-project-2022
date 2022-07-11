@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: white;
+  }
+  
+  .row {
+    background: white;
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px grey;
+  }
+  
+  img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .btn1 {
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .btn1:hover {
+    background: white;
+    border: 1px solid;
+    color: black;
+  }
+  
