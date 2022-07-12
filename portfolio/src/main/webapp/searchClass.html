@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="searchClass.css">
+
+    <!-- Import Bootstrap CSS  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- Import Google Fonts: Playfair Display  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Gowun+Dodum&family=Playfair+Display:wght@400;500&family=Prata&family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <section class="nav-intro" style="background-image: url('flower.jpg');">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
+                <div class="container-xxl">
+                    <!-- navbar brand / title -->
+                    <a class="navbar-brand" href="index.html">
+                        <span class="fw-bold brand">
+                            ClassmateFinder
+                        </span>
+                    </a>
+                    <!-- toggle button for mobile nav -->
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#main-nav"
+                        aria-controls="main-nav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                            
+                    <!-- navbar links -->
+
+                
+                    <div
+                        class="collapse navbar-collapse justify-content-end align-center"
+                        id="main-nav"
+                    >
+                    
+                        <ul class="navbar-nav">
+                            
+
+                            <li class="nav-item">
+                                <a class="nav-link drop" href="#">HOME</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link drop" href="#">CLASSES</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link drop" href="#">ABOUT</a>
+                            </li>
+
+                            <li class="nav-item">
+                                    <a class="nav-link drop" href="#">SIGN IN</a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+<!--Navigation Bar-->
+
+    <section class="search-form">
+        <!-- form header -->
+        <h1 class="form-header">Search For Class</h1>
+        
+        <!-- form contents -->
+        <form class="search-form-content" method="POST" action="/search-class">
+            <!-- row 1 -->
+            <div class="search-rows">
+                <input type="text" 
+                    class="text-input" 
+                    id="college-name" 
+                    name="schoolName"
+                    placeholder="College/University Name" required>
+                
+                <input type="text" 
+                    class="text-input" 
+                    id="department" 
+                    name="department"
+                    placeholder="Department" required>
+                
+                <input type="text" 
+                    class="text-input" 
+                    id="professor" 
+                    name="professor"
+                    placeholder="Professor">
+            </div>
+
+            <!-- row 2 -->
+            <div class="search-rows">
+                <input type="text" 
+                    class="text-input" 
+                    id="className" 
+                    name="className"
+                    placeholder="Class Name/Number" required>
+
+                <input type="text" 
+                    class="text-input" 
+                    id="classSemester" 
+                    name="classSemester"
+                    placeholder="Class Semester" required>
+            
+
+                <input type="text" 
+                    class="text-input" 
+                    id="classYear" 
+                    name="classYear"
+                    placeholder="Class Year" required>
+            
+                
+            </div>  
+            <button type="submit" class="btn">Search</button>  
+        </form>
+    </section>
+
+    <!-- pending: display the search result -->
+    <section class="result-table" >
+        <table>
+            <thead>
+                <th>College/University</th>
+                <th>Department</th>
+                <th>Class Info</th>
+                <th>Semester</th>
+                <th>Professor</th>
+                <th></th>
+            </thead>
+            <tr>
+                <td>Saint Mary's College</td>
+                <td>Computer Science</td>
+                <td>CS 101</td>
+                <td>Fall 2022</td>
+                <td>Molly Thompson</td>
+                <td><button>ADD CLASS</button></td>
+            </tr>
+            <tr>
+                <td>Saint Mary's College</td>
+                <td>Biology</td>
+                <td>BIO 302</td>
+                <td>Fall 2022</td>
+                <td>Hazel Prince</td>
+                <td><button>ADD CLASS</button></td>
+            </tr>
+            <tr>
+                <td>Saint Mary's College</td>
+                <td>Biology</td>
+                <td>BIO 302</td>
+                <td>Fall 2022</td>
+                <td>Hazel Prince</td>
+                <td><button>ADD CLASS</button></td>
+            </tr>
+            <tr>
+                <td>Saint Mary's College</td>
+                <td>Biology</td>
+                <td>BIO 302</td>
+                <td>Fall 2022</td>
+                <td>Hazel Prince</td>
+                <td><button>ADD CLASS</button></td>
+            </tr>
+            <tr>
+                <td>Saint Mary's College</td>
+                <td>Biology</td>
+                <td>BIO 302</td>
+                <td>Fall 2022</td>
+                <td>Hazel Prince</td>
+                <td><button>ADD CLASS</button></td>
+            </tr>
+            <tr>
+                <td>Saint Mary's College</td>
+                <td>Biology</td>
+                <td>BIO 302</td>
+                <td>Fall 2022</td>
+                <td>Hazel Prince</td>
+                <td><button>ADD CLASS</button></td>
+            </tr>
+            <tr>
+                <td>Saint Mary's College</td>
+                <td>Biology</td>
+                <td>BIO 302</td>
+                <td>Fall 2022</td>
+                <td>Hazel Prince</td>
+                <td><button>ADD CLASS</button></td>
+            </tr>
+        </table>
+    </section>
+
+
+		
+   
+    <footer class = "contact"> 
+        
+	</footer>
+		
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
