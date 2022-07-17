@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Add Class</title>
-    <link rel="stylesheet" type = "text/css" href="addclass.css" />
-
+    <link rel="stylesheet" type = "text/css" href="contactform.css" />
 
     <!-- Import Bootstrap CSS  -->
     <link
@@ -24,13 +23,10 @@
     />
   </head>
 
-
   <body style = "background-image: url(images/Background.png);">
 
 
 <!-- Nav Bar Begins -->
-
-
 			<section class="nav-intro" style="background-image: url('flower.jpg');">
 					<div class="container">
 						<nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
@@ -75,7 +71,6 @@
 									</li>
 
 										<li class="nav-item">
-
 											<a class="nav-link drop" href="index.html"> HOME</a>
 										</li>
 		
@@ -84,19 +79,17 @@
 										</li>
 		
 										<li class="nav-item">
-											<a class="nav-link drop" href="contactform.html">ABOUT</a>
+											<a class="nav-link drop" href="contactForm.html">ABOUT</a>
 										</li>
 
 										<li class="nav-item">
 												<a class="nav-link drop" href="login.html">SIGN IN</a>
-
 											</li>
 									</ul>
 								</div>
 							</div>
 						</nav>
 					</div>
-
 		<!--Navigation Bar End-->
 
 		<!--Message Prompt -->
@@ -106,6 +99,7 @@
         <div class="col-10 offset-2 form-para">Looking to create a new Class? Let's get you started by filling out some info below. </div>
       </div>
      
+
 
       </div>
 
@@ -117,76 +111,69 @@
         </div>
       </div>
     </section>
-
        <!--Message Prompt End -->
 
        <!-- Beginning of Form -->
 
-    <form action = "/message-handler" method = "POST">
-
+    <form>
       <div class="form-row">
 
         <div class="form-group col-md-6 offset-2">
           <label for="inputName" class = "input-header">Name</label>
-
-          <input type="text" class="form-control" id="inputName" placeholder="Name" name = "name">
+          <input type="text" class="form-control" id="inputName" placeholder="Name">
         </div>
 
         <div class="form-group col-md-6 offset-2">
-          <label for="inputEmail" class = "input-header">Email</label>
-          <input type="email" class="form-control" id="inputEmail" placeholder="Email"  name = "email">
-
+          <label for="inputEmail4" class = "input-header">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
         </div>
     
       </div>
 
       <div class="form-group col-md-6 offset-2">
-
-        <label for="inputCollege" class = "input-header">College/University Name</label>
-        <input type="text" class="form-control" id="inputCollege" placeholder="College/University Name" name = "college" >
+        <label for="inputAddress" class = "input-header">College/University Name</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="College/University">
       </div>
       
       <div class="form-group col-md-6 offset-2">
-        	<label for="inputDepartment" class = "input-header">Department</label>
-					<input type="text" class="form-control" id="inputDepartment" placeholder="Department" name = "department">
+        	<label for="inputAddress2" class = "input-header">Department</label>
+					<input type="text" class="form-control" id="inputAddress2" placeholder="Department">
 			</div>
 			
 			<div class="form-group col-md-6 offset-2">
-        	<label for="inputProfessor" class = "input-header">Professor</label>
-					<input type="text" class="form-control" id="inputProfessor" placeholder="Professor" name = "professor">
+        	<label for="inputAddress2" class = "input-header">Professor</label>
+					<input type="text" class="form-control" id="inputAddress2" placeholder="Professor">
 			</div>
 			
 			<div class="form-group col-md-6 offset-2">
-        	<label for="inputSemester" class = "input-header">Class Semester</label>
-					<input type="text" class="form-control" id="inputSemster" placeholder="Class Semester" name = "semester">
+        	<label for="inputAddress2" class = "input-header">Class Semester</label>
+					<input type="text" class="form-control" id="inputAddress2" placeholder="Class Semester">
 			</div>
 
 			<div class="form-group col-md-6 offset-2">
-        	<label for="inputYear" class = "input-header">Class Year</label>
-					<input type="text" class="form-control" id="inputYear" placeholder="Class Year" name = "year">
+        	<label for="inputAddress2" class = "input-header">Year</label>
+					<input type="text" class="form-control" id="inputAddress2" placeholder="Year">
+			</div>
+			
+
+			<div class="form-group col-md-6 offset-2">
+        	<label for="inputAddress2" class = "input-header">Class Name/Number</label>
+					<input type="text" class="form-control" id="inputAddress2" placeholder="Class Name/ Number">
 			</div>
 			
 			<div class="form-group col-md-6 offset-2">
-        	    <label for="inputClassNum" class = "input-header">Class Name/Number</label>
-				<input type="text" class="form-control" id="inputClassName" placeholder="Class Name/Number" name = "className">
-			</div>
-			
-			<div class="form-group col-md-6 offset-2">
-        	    <label for="inputClassLink" class = "input-header">Discord/Slack Link</label>
-				<input type="text" class="form-control" id="inputClassLink" placeholder="Discord/Slack Link" name = "classlink">
-            </div>
+        	<label for="inputAddress2" class = "input-header">Discord/Slack Link</label>
+					<input type="text" class="form-control" id="inputAddress2" placeholder="Discord/Slack Link">
+      </div>
       
       <div class="row">
-        <div class = "col-md-6 offset-2">
-          <button type="submit" class="btn btn-dark">Add</button>
-
+        <div class = "col-md-6 offset-2" style= "padding-top: 20px">
+          <button type="submit" class="btn" style="background-color:#7C8DB0; color: white;">Add</button>
         </div>
       </div>
     </form>
 
-
     <!-- End of Form -->
-
 
 		
    

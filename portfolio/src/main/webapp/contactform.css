@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+  }
+  
+  
+  #form{
+    background-color: white;
+    padding: 2px 20px;
+  }
+  
+  #messagePrompt{
+    background-color: #f2f2f0;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    padding: 50px 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  
+  #messagePromptHeader{
+    background-color: #f2f2f0;
+    margin-top: 60px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    padding: 20px 30px;
+    padding-bottom:0px;
+  
+  }
+  
+  #slogan{
+    font-weight: bold; 
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  
+  #mission{
+    display: row;
+    margin: 150px 200px;
+    margin-top: 450px;
+    margin-bottom: 50px; 
+    padding: 0px 0px;
+    text-align: center;
+  }
