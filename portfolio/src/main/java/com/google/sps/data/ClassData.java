@@ -1,9 +1,9 @@
 package com.google.sps.data;
 
 public class ClassData{
-    public String schoolName, department, professor, className, semester;
-    public Long classYear,timestamp;
-    public ClassData(String schoolName, String department, String professor, String semester, Long classYear, String className){
+    public String schoolName, department, professor, className, semester, classYear;
+    //public timestamp;
+    public ClassData(String schoolName, String department, String professor, String semester, String classYear, String className){
         this.schoolName = schoolName;
         this.department = department;
         this.professor = professor;
