@@ -26,14 +26,14 @@
     />
   </head>
 
-  <body>
+  <body onload="loadSearchClassData()">
 
     <section class="nav-intro" style="background-image: url('flower.jpg');">
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
                 <div class="container-xxl">
                     <!-- navbar brand / title -->
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/">
                         <span class="fw-bold brand">
                             ClassmateFinder
                         </span>
@@ -64,7 +64,7 @@
                             
 
                             <li class="nav-item">
-                                <a class="nav-link drop" href="index.html">HOME</a>
+                                <a class="nav-link drop" href="/">HOME</a>
                             </li>
 
                             <li class="nav-item">
@@ -81,7 +81,7 @@
 
                             <li class="nav-item">
                                     <a class="nav-link drop" href="login.html">SIGN IN</a>
-                                </li>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -95,12 +95,12 @@
         <h1 class="form-header">Search For Class</h1>
         
         <!-- form contents -->
-        <form class="search-form-content" method="GET" action="/search-class">
+        <form class="search-form-content">
             <!-- row 1 -->
             <div class="search-rows">
                 <input type="text" 
                     class="text-input" 
-                    id="college-name" 
+                    id="schoolName" 
                     name="schoolName"
                     placeholder="College/University Name" required>
                 
@@ -112,46 +112,43 @@
                 
                 <input type="text" 
                     class="text-input" 
-                    id="professor" 
-                    name="professor"
-                    placeholder="Professor">
+                    id="className" 
+                    name="className"
+                    placeholder="Class Name/Number" required>
+                
             </div>
 
             <!-- row 2 -->
             <div class="search-rows">
                 <input type="text" 
                     class="text-input" 
-                    id="className" 
-                    name="className"
-                    placeholder="Class Name/Number" required>
+                    id="professor" 
+                    name="professor"
+                    placeholder="Professor">
 
                 <input type="text" 
                     class="text-input" 
                     id="classSemester" 
                     name="classSemester"
-                    placeholder="Class Semester" required>
+                    placeholder="Class Semester">
             
 
                 <input type="text" 
                     class="text-input" 
                     id="classYear" 
                     name="classYear"
-                    placeholder="Class Year" required>
+                    placeholder="Class Year">
             
                 
             </div>  
-            <button  onsubmit="loadSearchClassData()" class="btn">Search</button>  
+            <button type="button" onclick="filter()" class="btn">Search</button>  
             
         </form>
     </section>
 
-      
-    <button  onClick="addRandomGreeting()" class="btn">Search</button>  
-            
-
     <!-- pending: display the search result -->
-    <div class="result-table" id="class-data-display-container" >
-        <!-- <table>
+    <div class="result-table"  >
+        <table id="class-data-display-container">
             <thead>
                 <th>College/University</th>
                 <th>Department</th>
@@ -160,22 +157,9 @@
                 <th>Professor</th>
                 <th></th>
             </thead>
-            <tr>
-                <td>Saint Mary's College</td>
-                <td>Computer Science</td>
-                <td>CS 101</td>
-                <td>Fall 2022</td>
-                <td>Molly Thompson</td>
-                <td><button>ADD CLASS</button></td>
-            </tr>
-          
-           
-           
-        </table> -->
+        </table>
     </div>
 
-
-		
    
     <footer class = "contact"> 
         

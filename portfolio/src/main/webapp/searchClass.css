@@ -5,8 +5,8 @@
 /* search class form style */
 .search-form {
     box-sizing: border-box;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .form-header {
@@ -58,8 +58,8 @@
 
 /* search result content */
 .result-table table{
-    width:70%; 
-    margin: 2rem 16vw;
+    width:90%; 
+    margin: 2rem 5vw;
     font-family: "Inter";
     text-align: left;
 }
