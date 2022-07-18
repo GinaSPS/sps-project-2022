@@ -10,8 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-//import org.jsoup.Jsoup;
-//import org.jsoup.safety.Whitelist;
+
 
 @WebServlet("/class-handler")
 public class ClassHandlerServlet extends HttpServlet {
@@ -26,7 +25,7 @@ public class ClassHandlerServlet extends HttpServlet {
     String professor = request.getParameter("professor");
     String semester = request.getParameter("semester");
     String year = request.getParameter("year");
-    String classNum = request.getParameter("classnum");
+    String className = request.getParameter("className");
     String classLink = request.getParameter("classlink");
 
     Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
@@ -40,7 +39,7 @@ public class ClassHandlerServlet extends HttpServlet {
             .set("professor", professor)
             .set("semester", semester)
             .set("year",year)
-            .set("classNum", classNum)
+            .set("className", className)
             .set("classLink", classLink)
             .build();
     datastore.put(visitorEntity);

@@ -20,71 +20,41 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 @WebServlet("/search-class")
 public class SearchClassServlet extends HttpServlet {
     @Override
-    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-      Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
-      Query<Entity> query =
-          Query.newEntityQueryBuilder().setKind("Class").setOrderBy(OrderBy.desc("timestamp")).build();
-      QueryResults<Entity> results = datastore.run(query);
-      
-      //get the filter option from user
-      String schoolName = request.getParameter("schoolName");
-      String department = request.getParameter("department");
-      String professor = request.getParameter("professor");
-      String semester = request.getParameter("classSemester");
-      String className = request.getParameter("className");
-      Long classYear = Long.valueOf(request.getParameter("classYear"));
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
+        Query<Entity> query =
+            Query.newEntityQueryBuilder().setKind("Classes").setOrderBy(OrderBy.desc("year")).build();
+        QueryResults<Entity> results = datastore.run(query);
 
-      //create a new classData
-      ClassData userInputData = new ClassData(schoolName, department, professor, semester, classYear, className);
-      
-      //TODO: test if any not required field is empty
-      
-      List<ClassData> classesResult = filterResult(results, userInputData);
-      
-      String formsJson = convertToJsonByGson(classesResult);
-  
-      response.setContentType("application/json;");
-      response.getWriter().println(formsJson);
-      
-    }
 
-    public List filterResult(QueryResults<Entity> results, ClassData usrInputData ){
-      List<ClassData> classes = new ArrayList<ClassData>();
-      while (results.hasNext()) {
-        Entity entity = results.next();
-  
-        long id = entity.getKey().getId();
-        String school = entity.getString("schoolName");
-        String department = entity.getString("department");
-        String professor = entity.getString("professor");
-        String semester = entity.getString("classSemester");
-        String className = entity.getString("className");
-        Long year = entity.getLong("classYear");
+        //test if any not required field is empty
+        List<ClassData> classesResult = new ArrayList<ClassData>();
+        while (results.hasNext()) {
+            Entity entity = results.next();
+      
+            long id = entity.getKey().getId();
+            String school = entity.getString("college");
+            String department = entity.getString("department");
+            String professor = entity.getString("professor");
+            String semester = entity.getString("semester");
+            String year = entity.getString("year");
+            String className = entity.getString("className");
 
-        if (usrInputData.schoolName == school){
-          if (usrInputData.department == department){
-            if (usrInputData.professor == professor){
-              if(usrInputData.semester == semester){
-                if (usrInputData.className == className){
-                  if (usrInputData.classYear == year){
-                    ClassData c = new ClassData(school, department, professor,semester, year, className);
-                    classes.add(c);
-                  }
-                }
-              }
-            }
-          }
+            ClassData c = new ClassData(school, department, professor,semester, year, className);
+            classesResult.add(c);
         }
-  
-        
-      }
-      
-      return classes;
+
+        String formsJson = convertToJsonByGson(classesResult);
+
+        response.setContentType("application/json;");
+        response.getWriter().println(formsJson);
+    
     }
 
     /**
