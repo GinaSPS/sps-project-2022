@@ -1,0 +1,86 @@
+
+/* import Inter font, same as figma specified */
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+/* search class form style */
+.search-form {
+    box-sizing: border-box;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.form-header {
+    font-family: "Inter", sans-serif;
+    color: black;
+    padding-top: 20px;
+    font-weight: 400;
+    line-height: 73px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-input::placeholder {
+    padding-left: 1rem;
+    color: white;
+}
+
+.text-input {
+    width: 320px;
+    height: 46px;
+    margin: 1rem;
+    border-color: transparent;
+    background-color: #7C8DB0;
+}
+
+.search-rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.search-form-content {
+    background-color: #F0F0F0;
+    border: 1px solid transparent;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+
+.search-form  .btn {
+    width: 320px;
+    height: 64px;
+    margin: 1rem;
+    font-size: 1.5rem;
+    background-color: #CBC1F3;
+}
+
+/* search form end */
+
+
+/* search result content */
+.result-table table{
+    width:90%; 
+    margin: 2rem 5vw;
+    font-family: "Inter";
+    text-align: left;
+}
+
+
+table th {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+table td {
+    font-weight: 400;
+    font-size: 17px;
+    padding: 10px 0;
+}
+
+table button {
+    background-color: #CBC1F3;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 17px;
+}
+
+/* search result content end */
