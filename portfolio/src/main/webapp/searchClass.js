@@ -1,4 +1,3 @@
-
 /**
  * Async function loads the class data from the DataStore
  *      and display data to the table
@@ -91,3 +90,5 @@ function filter(){
         }
     }
 }   
+
+

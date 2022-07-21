@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>Search Class</title>
-    <script src="searchClass.js"></script>
-    <link rel="stylesheet" href="searchClass.css">
 
     <!-- Import Bootstrap CSS  -->
     <link
@@ -14,8 +12,20 @@
       crossorigin="anonymous"
     />
 
-    
+    <!-- jquery import -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" />
 
+    <!-- javascript files -->
+    <script src="autocomplete.js" defer></script>
+    <script src="searchClass.js" defer></script>
+
+    <!-- style sheet of searchClass -->
+    <link rel="stylesheet" href="searchClass.css">
+    <link rel="stylesheet" href="autocomplete.css">
+    
     <!-- Import Google Fonts: Playfair Display  -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -95,7 +105,7 @@
         <h1 class="form-header">Search For Class</h1>
         
         <!-- form contents -->
-        <form class="search-form-content">
+        <form class="search-form-content" autocomplete="off">
             <!-- row 1 -->
             <div class="search-rows">
                 <input type="text" 
@@ -103,7 +113,7 @@
                     id="schoolName" 
                     name="schoolName"
                     placeholder="College/University Name" required>
-                
+
                 <input type="text" 
                     class="text-input" 
                     id="department" 
@@ -120,6 +130,7 @@
 
             <!-- row 2 -->
             <div class="search-rows">
+
                 <input type="text" 
                     class="text-input" 
                     id="professor" 
@@ -132,14 +143,11 @@
                     name="classSemester"
                     placeholder="Class Semester">
             
-
-                <input type="text" 
+                <input type="number" 
                     class="text-input" 
                     id="classYear" 
                     name="classYear"
                     placeholder="Class Year">
-            
-                
             </div>  
             <button type="button" onclick="filter()" class="btn">Search</button>  
             

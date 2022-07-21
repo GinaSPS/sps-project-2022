@@ -3,6 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <title>Add Class</title>
+
+    <!-- jquery import -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" />
+
+    <!-- autocomplete -->
+    <script src="autocomplete.js" defer></script>
+    <link rel="stylesheet" href="autocomplete.css">
+
+    <link rel="stylesheet" type = "text/css" href="addclass.css" />
     <link rel="stylesheet" type = "text/css" href="contactform.css" />
 
     <!-- Import Bootstrap CSS  -->
@@ -123,48 +135,48 @@
         </div>
 
         <div class="form-group col-md-6 offset-2">
-          <label for="inputEmail4" class = "input-header">Email</label>
+          <label for="inputEmail" class = "input-header">Email</label>
           <input type="email" class="form-control" id="inputEmail" placeholder="Email"  name = "email" required>
+
         </div>
     
       </div>
 
       <div class="form-group col-md-6 offset-2">
-        <label for="inputAddress" class = "input-header">College/University Name</label>
+        <label for="inputCollege" class = "input-header">College/University Name</label>
         <input type="text" class="form-control" id="schoolName" placeholder="College/University Name" name = "college" required>
       </div>
       
       <div class="form-group col-md-6 offset-2">
-        	<label for="inputAddress2" class = "input-header">Department</label>
-            <input type="text" class="form-control" id="department" placeholder="Department" name = "department" required>
-        </div>
+        	<label for="inputDepartment" class = "input-header">Department</label>
+					<input type="text" class="form-control" id="department" placeholder="Department" name = "department" required>
 			</div>
 			
 			<div class="form-group col-md-6 offset-2">
-        	<label for="inputAddress2" class = "input-header">Professor</label>
-            <input type="text" class="form-control" id="inputProfessor" placeholder="Professor" name = "professor" required>
+        	<label for="inputProfessor" class = "input-header">Professor</label>
+					<input type="text" class="form-control" id="inputProfessor" placeholder="Professor" name = "professor" required>
 			</div>
 			
 			<div class="form-group col-md-6 offset-2">
-        	<label for="inputAddress2" class = "input-header">Class Semester</label>
-                <input type="text" class="form-control" id="classSemester" placeholder="Class Semester" name = "semester" required>
+        	<label for="inputSemester" class = "input-header">Class Semester</label>
+					<input type="text" class="form-control" id="classSemester" placeholder="Class Semester" name = "semester" required>
 			</div>
 
 			<div class="form-group col-md-6 offset-2">
-        	<label for="inputAddress2" class = "input-header">Year</label>
-            <input type="number" class="form-control" id="classYear" placeholder="Class Year" name = "year" required>
+        	<label for="inputYear" class = "input-header">Class Year</label>
+					<input type="number" class="form-control" id="classYear" placeholder="Class Year" name = "year" required>
 			</div>
 			
 
 			<div class="form-group col-md-6 offset-2">
-        	<label for="inputAddress2" class = "input-header">Class Name/Number</label>
-            <input type="text" class="form-control" id="inputClassName" placeholder="Class Name/Number" name = "className" required>
+        	    <label for="inputClassNum" class = "input-header">Class Name/Number</label>
+				<input type="text" class="form-control" id="inputClassName" placeholder="Class Name/Number" name = "className" required>
 			</div>
 			
 			<div class="form-group col-md-6 offset-2">
-        	<label for="inputAddress2" class = "input-header">Discord/Slack Link</label>
-            <input type="text" class="form-control" id="inputClassLink" placeholder="Discord/Slack Link" name = "classlink" required>
-      </div>
+        	    <label for="inputClassLink" class = "input-header">Discord/Slack Link</label>
+				<input type="text" class="form-control" id="inputClassLink" placeholder="Discord/Slack Link" name = "classlink" required>
+            </div>
       
       <div class="row">
         <div class = "col-md-6 offset-2" style= "padding-top: 20px">
