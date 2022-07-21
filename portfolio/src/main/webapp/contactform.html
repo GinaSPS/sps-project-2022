@@ -1,9 +1,11 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Add Class</title>
-    <link rel="stylesheet" type = "text/css" href="contactform.css" />
+    <title>Contact Us</title>
+
+<link rel="stylesheet" type="text/css" href="contactform.css">
+    
 
     <!-- Import Bootstrap CSS  -->
     <link
@@ -23,168 +25,141 @@
     />
   </head>
 
-  <body style = "background-image: url(images/Background.png);">
+  <body style = "background-image: url(images/ContactBackground.png); background-repeat:no-repeat;">
 
 
 <!-- Nav Bar Begins -->
-			<section class="nav-intro" style="background-image: url('flower.jpg');">
-					<div class="container">
-						<nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
-							<div class="container-xxl">
-								<!-- navbar brand / title -->
-								<a class="navbar-brand" href="index.html">
-									<span class="fw-bold brand">
-										<img src="images/Classes.png" style = "height: 130px;">
-									
-									</span>
-								</a>
-								<!-- toggle button for mobile nav -->
-								<button
-									class="navbar-toggler"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#main-nav"
-									aria-controls="main-nav"
-									aria-expanded="false"
-									aria-label="Toggle navigation"
-								>
-									<span class="navbar-toggler-icon"></span>
-								</button>
+<section class="nav-intro" style="background-image: url('flower.jpg');">
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
+            <div class="container-xxl">
+                <!-- navbar brand / title -->
+                <a class="navbar-brand" href="index.html">
+                    <span class="fw-bold brand">
+                        <img src="images/Classes.png" style = "height: 130px;">
+                    
+                    </span>
+                </a>
+                <!-- toggle button for mobile nav -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#main-nav"
+                    aria-controls="main-nav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-										
-								<!-- navbar links -->
+                        
+                <!-- navbar links -->
 
-							
-								<div
-									class="collapse navbar-collapse justify-content-end align-center"
-									id="main-nav"
-								>
-								
-									<ul class="navbar-nav">
-										<li class="nav-item">
-													<div class="search">
-															<i class="fa fa-search"></i>
-															<input type="text" class="form-control" placeholder="Search Classes">
-													</div>
-										</li>
-										<li class="nav-item">		
-									</li>
-
-										<li class="nav-item">
-											<a class="nav-link drop" href="index.html"> HOME</a>
-										</li>
-		
-										<li class="nav-item">
-											<a class="nav-link drop" href="addclass.html">ADD CLASSES</a>
-										</li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link drop" href="searchClass.html">SEARCH CLASS</a>
-                                        </li>
-		
-										<li class="nav-item">
-											<a class="nav-link drop" href="contactform.html">ABOUT</a>
-										</li>
-
-										<li class="nav-item">
-												<a class="nav-link drop" href="login.html">SIGN IN</a>
-											</li>
-									</ul>
-								</div>
-							</div>
-						</nav>
-					</div>
-		<!--Navigation Bar End-->
-
-		<!--Message Prompt -->
-
-		<section class="form-header">
-      <div class="row" style = "padding: 15px, 2px;">
-        <div class="col-10 offset-2 form-para">Looking to create a new Class? Let's get you started by filling out some info below. </div>
-      </div>
-     
+            
+                <div
+                    class="collapse navbar-collapse justify-content-end align-center"
+                    id="main-nav"
+                >
+                
+                    <ul class="navbar-nav">
+                            
 
 
-      </div>
+                        <li class="nav-item">
+                            <a class="nav-link drop" href="index.html"> HOME</a>
+                        </li>
 
-      <div class="row">
-        
+                        <li class="nav-item">
+                            <a class="nav-link drop" href="contactform.html">ABOUT</a>
+                        </li>
 
-        <div class="row">
-          <div class="col-3 offset-2 design-1"></div>
-        </div>
-      </div>
-    </section>
-       <!--Message Prompt End -->
+                        <li class="nav-item">
+                            <a class="nav-link drop" href="addclass.html">ADD CLASSES</a>
+                        </li>
 
-       <!-- Beginning of Form -->
+                        <li class="nav-item">
+                            <a class="nav-link drop" href="searchClass.html">SEARCH CLASSES</a>
+                        </li>
+                        
 
-    <form>
-      <div class="form-row">
+                        <li class="nav-item">
+                                <a class="nav-link drop" href="login.html">SIGN IN</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+<!--Navigation Bar End-->
 
-        <div class="form-group col-md-6 offset-2">
-          <label for="inputName" class = "input-header">Name</label>
-          <input type="text" class="form-control" id="inputName" placeholder="Name">
-        </div>
+    <!--Greeting-->
+    <div class ="col-md-6"  style = "float: right;">
+      <h1 id = "slogan"> Work better together. </h1>
+      <p>Our mission is to inspire students to share and explore knowledge in a collaborative community. </p>
 
-        <div class="form-group col-md-6 offset-2">
-          <label for="inputEmail4" class = "input-header">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-        </div>
+      <button class = "btn"  style="float:right; margin-right: 50px;background-color: #7C8DB0; color: white;"> Get Connected </button>
+    </div>
+
+    <!--Mission-->
+    <div id = "mission">
+
+      <h2> - Our Mission - </h2>
+      <p>Two brains are better than one. And with a few hundred brains, things can really take off. That’s why we believe in working without borders with classmates. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+
+<hr style="margin: 0px 200px;">
     
-      </div>
-
-      <div class="form-group col-md-6 offset-2">
-        <label for="inputAddress" class = "input-header">College/University Name</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="College/University">
-      </div>
+       <!-- Beginning of Form -->
+       <div class= "col-md-6" style="float: left; margin-top: 40px;" >
+        
+    <form >
       
-      <div class="form-group col-md-6 offset-2">
-        	<label for="inputAddress2" class = "input-header">Department</label>
-					<input type="text" class="form-control" id="inputAddress2" placeholder="Department">
-			</div>
-			
-			<div class="form-group col-md-6 offset-2">
-        	<label for="inputAddress2" class = "input-header">Professor</label>
-					<input type="text" class="form-control" id="inputAddress2" placeholder="Professor">
-			</div>
-			
-			<div class="form-group col-md-6 offset-2">
-        	<label for="inputAddress2" class = "input-header">Class Semester</label>
-					<input type="text" class="form-control" id="inputAddress2" placeholder="Class Semester">
-			</div>
-
-			<div class="form-group col-md-6 offset-2">
-        	<label for="inputAddress2" class = "input-header">Year</label>
-					<input type="text" class="form-control" id="inputAddress2" placeholder="Year">
-			</div>
-			
-
-			<div class="form-group col-md-6 offset-2">
-        	<label for="inputAddress2" class = "input-header">Class Name/Number</label>
-					<input type="text" class="form-control" id="inputAddress2" placeholder="Class Name/ Number">
-			</div>
-			
-			<div class="form-group col-md-6 offset-2">
-        	<label for="inputAddress2" class = "input-header">Discord/Slack Link</label>
-					<input type="text" class="form-control" id="inputAddress2" placeholder="Discord/Slack Link">
-      </div>
-      
-      <div class="row">
-        <div class = "col-md-6 offset-2" style= "padding-top: 20px">
-          <button type="submit" class="btn" style="background-color:#7C8DB0; color: white;">Add</button>
+        
+        <div class="col-md-8 offset-3" id = "form" >
+          <label for="inputName" class = "input-header">Name</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Name" name = "name">
         </div>
+
+        
+        <div class="col-md-8 offset-3" id = "form">
+          <label for="inputEmail4" class = "input-header">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name = "email">
+        </div>   
+
+      <div class="col-md-8 offset-3" id = "form">
+        <label for="inputAddress" class = "input-header">Subject</label>
+        <input type="subject" class="form-control" id="inputAddress" placeholder="Subject" name = "subject">
       </div>
+
+      <div class="col-md-8 offset-3" id = "form">
+        <label for="inputMessage" class = "input-header">Message</label>
+        <input type="text" class="form-control" id="inputMessage" style = "padding-bottom: 80px" placeholder="Type Message Here" name = "message">
+      </div>
+      
+        <div class = "col-md-6 offset-3" style= "padding-top: 20px; margin-bottom: 50px;" id = "form">
+          <button type="submit" class="btn" style="background-color: #7C8DB0; color: white;">Send Message</button>
+        </div>    
+       
     </form>
+  
 
-    <!-- End of Form -->
+  </div>
+   <!-- End of Form -->
 
-		
-   
+  <div class = "col-md-6" style="float:right; margin-top: 40px;">
+
+        <h2 id = "messagePromptHeader"> How can we help? </h2>
+        <p id = "messagePrompt"> We're open to any feedback and suggestions! Maybe you have a question? Fill in the form to message us and our team will get back to you as soon as we can! </p>
+      
+    
+  </div>
+
+
     <footer class = "contact"> 
         
-		</footer>
-		
+    </footer>
+    
 
 
     <script

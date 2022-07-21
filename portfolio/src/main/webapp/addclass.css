@@ -1,118 +1,43 @@
-
-#content {
-    margin-left: auto;
-    margin-right: auto;
-    width: 650px;
+html, body {
+    height: 100%;
   }
   
-  #greeting-container {
-    margin-top: 20px;
-  }
   
-  label {
-      padding-top: 10px;
-      padding-bottom: 2px;
-      font-size: 13px;
-  }
-  
-  /* Form Header Prompt */
-  .form-header{
-      background-color: #f2f2f0;
-      margin-left: 200px;
-      margin-right: 200px;
-      margin-bottom: 20px;
-      padding: 200px, 500px;
-  
-  }
-
-body {
+  #form{
     background-color: white;
+    padding: 2px 20px;
   }
   
-  .form-para {
-    color: black;
-    font-size: 3rem;
-    text-align: left;
-    padding-top: 50px;
+  #messagePrompt{
+    background-color: #f2f2f0;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    padding: 50px 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
   
-  .input-header {
-    color: black;
-    font-size: 1rem;
-    text-align: left;
-    padding-bottom: 10px;
-    padding-top: 10px;
+  #messagePromptHeader{
+    background-color: #f2f2f0;
+    margin-top: 60px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    padding: 20px 30px;
+    padding-bottom:0px;
+  
   }
   
-  .btn {
-    margin-top: 20px;
-    background-color: black;
+  #slogan{
+    font-weight: bold; 
+    font-size: 30px;
+    margin-top: 40px;
   }
   
-  .design-quote {
-    color: black;
-    font-size: 1.5rem;
-    text-align: left;
-    padding-top: 50px;
-  }
-  
-  ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: pink;
-    font-family: "Playfair Display", serif;
-  }
-  ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: pink;
-    font-family: "Playfair Display", serif;
-  }
-  :-ms-input-placeholder {
-    /* IE 10+ */
-    color: pink;
-    font-family: "Playfair Display", serif;
-  }
-  :-moz-placeholder {
-    /* Firefox 18- */
-    color: pink;
-    font-family: "Playfair Display", serif;
-  }
-  
-  .design-phil {
-    font-family: "Playfair Display", serif;
-    color: black;
-    font-size: 1rem;
-    text-align: left;
-    padding-top: 50px;
-  }
-  
-  .brand {
-    color: black;
-    font-size: 2rem;
+  #mission{
+    display: row;
+    margin: 150px 200px;
+    margin-top: 450px;
+    margin-bottom: 50px; 
+    padding: 0px 0px;
     text-align: center;
   }
-  
-  .drop {
-    color: black;
-    font-size: 1rem;
-    text-align: center;
-  }
-  
-  .intro {
-    color: black;
-    font-size: 3rem;
-    text-align: left;
-    padding-top: 100px;
-  }
-  
-  .intro-sen {
-    color: white;
-    font-size: 1.5rem;
-    text-align: left;
-    padding-top: 30px;
-    padding-bottom: 40rem;
-  }
-  
-  .mobile-button {
-    color: white;
-  }
-  
